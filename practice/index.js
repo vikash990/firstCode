@@ -1,4 +1,4 @@
-var x=[2,3,4,4,57,-1]
+/* var x=[2,3,4,4,57,-1]
 //console.log(x.length);
 var a1=[1,2,3,45,66,6];
 var a2=[33,44,55,6]
@@ -25,8 +25,15 @@ var newSlice=sliceArr.slice(0,3);
 
 var spliceArr=[2,4,5,6,7,8]
 spliceArr.splice(2,0,0,1);
-console.log(spliceArr)
+console.log(spliceArr) */
 
+var data='{"name":"vikash",  "lastName":"dubey","rollNumber":"67"}'
+console.log(data);
+console.log(JSON.parse(data))
+console.log(JSON.stringify(data))
+
+var localToken= localStorage.setItem("name","vikash");
+var sessionToken=sessionStorage.setItem("newName","Dubey");
 
 
 

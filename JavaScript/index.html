@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first"></h1>
+    <button onclick="showMe()" id="second">Click me</button>
+    <h1 onclick='this.innerHTML="hiii"' >Click me again</h1>
+    <div  style="height: 200px; width: 300px; background-color: red;text-align: center;padding: 50px 0px;">
+        <h1 onmousemove="mOver(this)">Over on me</h1>
+    </div>
+
+    <button id="btn1">Click me</button>
+    <h1 id="btnText"></h1>
+
+    <script>
+        document.getElementById("first").innerHTML="hello World"
+        function showMe(){
+            document.getElementById("second").innerHTML="I am clicked"
+        }
+
+        function mOver(thisEle){
+            thisEle.innerHTML="I am changed"
+        }
+
+        document.getElementById("btn1").addEventListener(onclick,function newText(){
+          document.getElementById("btnText").innerHTML="you have cli"
+        })
+    </script>
+</body>
+</html>
